@@ -1,0 +1,22 @@
+# Core Libraries
+torch>=2.0.0
+torchaudio>=2.0.0
+numpy>=1.24.0
+pandas>=2.0.0
+scipy>=1.10.0
+
+# Hugging Face Ecosystem
+transformers>=4.35.0
+datasets>=2.14.0
+accelerate>=0.24.0
+peft>=0.6.0
+
+# Audio Processing
+librosa>=0.10.0
+soundfile>=0.12.1
+pydub>=0.25.1  # Requires FFmpeg
+ffmpeg-python>=0.2.0 
+
+# Optional Utilities
+tqdm>=4.65.0
+python-dotenv>=1.0.0

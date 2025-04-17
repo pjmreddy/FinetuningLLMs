@@ -1,33 +1,53 @@
 # 🧠 Fine-Tuning LLMs with PEFT
 
-[![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-red)](https://pytorch.org)
-[![HuggingFace](https://img.shields.io/badge/🤗-Transformers-yellow)](https://huggingface.co)
-[![PEFT](https://img.shields.io/badge/PEFT-0.5%2B-blue)](https://github.com/huggingface/peft)
+PyTorch | Hugging Face | PEFT
 
-A repository demonstrating **parameter-efficient fine-tuning** of Large Language Models (LLMs) using techniques like **LoRA**, **Adapters**, and **Prompt Tuning**. Optimized for minimal compute and rapid experimentation.
+A comprehensive repo for parameter-efficient fine-tuning (PEFT) of large language models using lightweight methods like LoRA, Adapters, and Prompt Tuning. Designed for minimal compute, high efficiency, and fast iteration.
 
----
+🚀 Key Features
 
-## 🚀 Key Features
-- **PEFT Methods**: LoRA (Low-Rank Adaptation), Adapter Layers, Prefix Tuning  
-- **Supported Models**: GPT, Whisper, LLaMA, BERT, DistilBERT, TinyBERT, MobileBERT
-- **Tasks**: Sentiment Analysis, Named Entity Recognition (NER), Text Classification  
-- **Efficiency**: Achieve >90% baseline performance with <5% tuned parameters  
-- **Reproducibility**: Hugging Face `transformers` + `peft` integration  
+🔧 PEFT Techniques
+LoRA (Low-Rank Adaptation), Adapter Layers, Prefix Tuning, Prompt Tuning
 
----
+🧬 Model Support
+✅ GPT | Whisper | LLaMA | BERT | DistilBERT | TinyBERT | MobileBERT
 
-## 📚 Techniques Covered
-| **Method**       | **Use Case**           | **Example Models**       |  
-|-------------------|------------------------|--------------------------|  
-| **LoRA**          | Low-rank decomposition | LLaMA-2, BERT variants   |  
-| **Adapters**      | Task-specific layers   | DistilBERT, TinyBERT     |  
-| **Prefix Tuning** | Prompt optimization    | GPT-style architectures  |  
+📂 Tasks Covered
+Sentiment Analysis
+Named Entity Recognition (NER)
+Text Classification
+📈 Efficiency First
+Achieve 90–95% of full fine-tuned model performance
+using <5% of total parameters
 
----
+🧪 Reproducibility
+Built with 🤗 Hugging Face transformers, peft, accelerate
+📚 Techniques Covered
 
-## ⚡ Quick Start
+Method	Use Case	Example Models
+LoRA	Low-rank decomposition	LLaMA-2, BERT variants
+Adapters	Lightweight fine-tuning	DistilBERT, TinyBERT
+Prefix Tuning	Prompt optimization	GPT-style architectures
 
-### 1. Install Dependencies
-```bash
+⚡ Quick Start
+
+# 1. Install dependencies
 pip install torch transformers peft accelerate datasets
+
+# 2. Clone the repo
+git clone https://github.com/pjmreddy/FinetuningLLMs
+cd FinetuningLLMs
+
+# 3. Run example script
+python finetune_sentiment.py --model_name bert-base-uncased --method lora
+🧠 Example Notebooks
+
+✅ Finetuning_LLaMA2.ipynb
+✅ NER_using_DistilBERT.ipynb
+✅ Sentiment_Classification_BERT.ipynb
+✅ Comparing_DistilBERT_TinyBERT_MobileBERT.ipynb
+📍 Trained on
+
+LONI HPC Clusters – High-performance compute optimized for large model training & experimentation.
+
+Let me know if you want to generate badges, add model performance tables, or integrate Colab links!
